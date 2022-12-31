@@ -14,7 +14,7 @@ function LoginForm({ error, login }) {
   }
 
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler} className="form-login">
       <div className="form-inner">
         <h2>Login Form</h2>
         {error !== "" ? (

@@ -1,4 +1,4 @@
-/* *{
+*{
     box-sizing: border-box;
     font-family: sans-serif;
 }
@@ -9,7 +9,7 @@ button {
   border: none;
 } 
 
-form {
+.form-login {
     display: block;
     position: relative;
     height: 100vh;
@@ -18,7 +18,7 @@ form {
     justify-content: center;
     background-color: white;
   }
-  form:after {
+  .form-login:after {
     content: "";
     display: block;
     position: absolute;
@@ -32,7 +32,7 @@ form {
       rgb(91, 87, 115), rgba(0, 0, 0, 1)
     );
   }
-  form .form-inner {
+  .form-login  .form-inner {
     position: relative;
     display: block;
     background-color: #fff;
@@ -40,19 +40,19 @@ form {
     padding: 30px;
     z-index: 2;
   }
-  form .form-inner h2 {
+  .form-login  .form-inner h2 {
     color: #888;
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 30px;
   }
-  form .form-inner .form-group {
+  .form-login .form-inner .form-group {
     display: block;
     width: 300px;
     margin-bottom: 15px;
   }
   
-  form .form-inner .form-group box-icon {
+  .form-login .form-inner .form-group box-icon {
     position: relative;
     bottom: 30px;
     left: 90%;
@@ -78,12 +78,12 @@ form {
     transition: ease 0.4s;
     outline-color: #ffffff;
   }
-  form .form-inner .form-group input:focus {
+  .form-login .form-inner .form-group input:focus {
     outline-color: #fe4880;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
   }
   
-  form .form-inner input[type="submit"],
+  .form-login .form-inner input[type="submit"],
   .welcome button {
     padding: 10px 15px;
     border-radius: 8px;
@@ -100,7 +100,7 @@ form {
     cursor: pointer;
     transition: 0.4s;
   }
-  form .form-inner input[type="submit"]:hover,
+  .form-login .form-inner input[type="submit"]:hover,
   .welcome button:hover {
     background-position: 100% 0%;
   }
@@ -139,4 +139,4 @@ form {
   .hide {
     visibility: hidden;
     opacity: 0;
-  }  */
+  } 
